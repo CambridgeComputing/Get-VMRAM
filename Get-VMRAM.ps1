@@ -48,7 +48,7 @@ Function Get-VMRAM {
 
     # Output results
     Write-Host  "Total Allocated RAM: "([math]::ceiling($TotalRAM)) GB
-    Write-Host  "Total Physcial RAM:  "([math]::floor($PhyRAM)) GB
+    Write-Host  "Total Physical RAM:  "([math]::floor($PhyRAM)) GB
     Write-Host  `n"Total Utilization:    " -NoNewline
     Write-Host ([math]::Round(($TotalRAM/$PhyRAM)*100))% -ForegroundColor $color
 }
